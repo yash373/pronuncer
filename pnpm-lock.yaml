@@ -20,6 +20,9 @@ importers:
       react-speech-kit:
         specifier: ^3.0.1
         version: 3.0.1(prop-types@15.8.1)(react@18.3.1)
+      transliterate:
+        specifier: ^1.0.1
+        version: 1.0.1
     devDependencies:
       eslint:
         specifier: ^8
@@ -1381,6 +1384,9 @@ packages:
   to-regex-range@5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
+
+  transliterate@1.0.1:
+    resolution: {integrity: sha512-axhGb0vNR1G+GWpUhT1mavr+r/ueIKVxhk3ABfOUuxmNE27O1PMsqu5G4GCy73DBvONf4KkZ5qxgyp5WXOWk7g==}
 
   ts-api-utils@1.3.0:
     resolution: {integrity: sha512-UQMIo7pb8WRomKR1/+MFVLTroIvDVtMX3K6OUir8ynLyzB8Jeriont2bTAtmNPa1ekAgN7YPDyf6V+ygrdU+eQ==}
@@ -3035,6 +3041,8 @@ snapshots:
   to-regex-range@5.0.1:
     dependencies:
       is-number: 7.0.0
+
+  transliterate@1.0.1: {}
 
   ts-api-utils@1.3.0(typescript@5.4.5):
     dependencies:

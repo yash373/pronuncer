@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Title from '@/components/Title'
 import { useSpeechSynthesis } from 'react-speech-kit'
 import Button from '@/components/Button'
+import transliterate from "transliterate"
 
 const Index = () => {
   const { speak } = useSpeechSynthesis()
@@ -41,9 +42,14 @@ const Index = () => {
     }
   }
 
-  const speakRussian = async() => {
+  function transliterateRussian(text) {
+    return transliterate(text, { lang: 'ru' });
+  }
+
+  const speakRussian = async () => {
     const russianText = await getRussianText()
-    // say(t)
+    const readable = transliterateRussian(russianText)
+    say(readable)
   }
 
   return (
