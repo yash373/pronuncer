@@ -22,7 +22,7 @@ const Index = () => {
       <input onChange={updateText} value={text} placeholder='Enter your text here'  className='text-center w-[50%] mx-auto my-auto rounded-md h-[10vh] p-5 bg-slate-100' />
       <div className='mx-auto my-auto flex flex-col w-[90vh] gap-4'>
         <Button text={"Speak in Russian"} />
-        <Button text={"Speak in English"} />
+        <Button text={"Speak in English"} action={()=>{say(text)}} />
       </div>
     </div>
   )
