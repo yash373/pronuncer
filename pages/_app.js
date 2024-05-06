@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Word Pronouncer</title>
         {/* <!-- Google tag (gtag.js) --> */}
-        <GoogleTagManager gaId="G-9RLE5VT5MB" />
+        <GoogleTagManager gtmId="G-9RLE5VT5MB" />
       </Head>
       <Component {...pageProps} />
     </>
