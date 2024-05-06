@@ -1,5 +1,6 @@
 import React from 'react'
 import Title from '@/components/Title'
+import { useSpeechSynthesis } from 'react-speech-kit'
 
 const Index = () => {
   return (
